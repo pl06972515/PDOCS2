@@ -1,0 +1,94 @@
+
+.class{
+   background-image:url(../images/class.png);
+   background-repeat:no-repeat;
+   background-position-y: 1px;
+   padding-left: 19px; 
+}
+.abstract{
+   color: Red;
+   background-image:url(../images/abstract.png);
+   background-repeat:no-repeat;
+   background-position-y: 1px;
+   padding-left: 19px; 
+}
+.interface{
+   color: Red;
+   background-image:url(../images/interface.png);
+   background-repeat:no-repeat;
+   background-position-y: 0px;
+   padding-left: 19px; 
+}
+.static{
+   color: Blue;
+   background-image:url(../images/static.png);
+   background-repeat:no-repeat;
+   background-position-y: 1px;
+   padding-left: 19px; 
+}
+.attributeClass{
+   color: #FF7F00;
+   background-image:url(../images/attribute.png);
+   background-repeat:no-repeat;
+   background-position-y: 1px;
+   padding-left: 19px; 
+}
+
+.H2class{
+   background-image:url(../images/class.png);
+   background-repeat:no-repeat;
+   background-position-y: 4px;
+   padding-left: 20px; 
+}
+.H2Interface{
+   color: Red;
+   background-image:url(../images/interface.png);
+   background-repeat:no-repeat;
+   background-position-y: 6px;
+   padding-left: 20px; 
+}
+.H2Static{
+   color: Blue;
+   background-image:url(../images/static.png);
+   background-repeat:no-repeat;
+   background-position-y: 6px;
+   padding-left: 20px; 
+}
+.H2Attribute{
+   color: #FF7F00;
+   background-image:url(../images/attribute.png);
+   background-repeat:no-repeat;
+   background-position-y: 6px;
+   padding-left: 20px; 
+}
+
+:root {
+	--base-font-size: 12px;
+	--modular-scale-1: 0.8rem;
+	/* 主题颜色 */
+	/* --theme-color: purple;*/
+	/* 主题色调 (0-360) */
+	/* --theme-hue: 325;*/
+	
+	--mono-saturation: 10%;
+	--duration-slow: 1s;
+	--duration-medium: 0.5s;
+	--duration-fast: 0.5s;
+	--base-line-height: 1.4;
+	
+	/* 目录宽度 */
+	--sidebar-width: 30em;
+	/* 内容宽度 */
+	--content-max-width: 90em;
+	
+	/*转义`...`区域*/
+	--code-inline-background: #FFFAF0;
+	--code-inline-color: #CD661D;
+	/*--code-font-weight: bold;*/
+	/*背景图片*/
+	/*--cover-background-image:timg.png ;*/
+	
+	/*代码区域*/
+	--code-block-padding: 1em 1.5em 1em 1.5em;
+	
+}

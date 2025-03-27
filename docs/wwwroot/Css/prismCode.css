@@ -1,0 +1,27 @@
+
+
+/* csharp */
+.lang-csharp.language-csharp .token.attribute .token.class-name{
+	color: #2B91AF;
+}
+.lang-csharp.language-csharp .token.attribute .token.attribute-arguments{
+	color: #333333;
+}
+
+.lang-csharp.language-csharp .token.keyword{
+	color: #0000FF;
+}
+.lang-csharp.language-csharp .token.class-name{
+	color: #2B91AF;
+}
+.lang-csharp.language-csharp .token.boolean {
+	color: #0000FF;
+}
+
+/*
+.lang-csharp.language-csharp .token.generic-method .token.function{
+	color: #333333;
+}
+.lang-csharp.language-csharp .token.function{
+	color: #333333;
+}*/

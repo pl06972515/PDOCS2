@@ -1,0 +1,71 @@
+-  <span style='color:RED'>数据类型</span>
+-  [✡ Number](p3_8.0.0)
+-  [✡ String](p3_1.0.0)
+-  [✡ Datetime](p3_6.0.0)
+-  [✡ Enum](p3_7.0.0)
+-  [✡ None](p3_9.0.0)
+-  -
+-  [✡ [ 元组 ]Tuple](p3_2.0.0)
+-  [✡ [ 列表 ]List](p3_3.0.0)
+-  [✡ [ 集合 ]Set](p3_4.0.0)
+-  [✡ [ 字典 ]Dictionary](p3_5.0.0)
+-  -
+-  [☢ [ 迭代器 ]IEnumerable( iterable )](p15.0.0)
+-  [☢ [ LINQ ]IEnumerable](p21.0.0)
+-  
+-  <span style='color:Blue'><img src="wwwroot/images/MB.svg" alt="" style="margin-bottom:-4px" />&nbsp;基础语法</span>
+-  [✴ 变量概述](p2.0.0)
+-  [✴ [ 内置 ]运算符](p4.0.0)
+-  -
+-  [✴ [ 函数 ]Methad](p5.0.0)
+-  [✴ [ 匿名 ]Lambda](p5_1.0.0)
+-  [☢ [ 函数 ]Wraps](p20.0.0.md)
+-  
+-  -
+-  [✴ [ OO ]面向对象](C1.0.0)
+-  [✴ [ 异常 ]Exception](p12.0.0.md)
+-  
+-  <span style='color:RED'><img src="wwwroot/images/MB.svg" alt="" style="margin-bottom:-4px" />&nbsp;相关扩展</span>
+-  
+-  <span style='color:RED'>[ 包 + 模块概念 ]</span>
+-  [☢ [ A ]建包导入](M1.0.0)
+-  [☢ [ B ] 编译打包](M2.0.0)
+-  
+-  -
+-  [☢ [ C ] requirements.txt](M4.0.0)
+-  [☢ [ D ] 项目打包( .exe )](M3.0.0)
+-  
+-  <span style='color:Blue'>[ 常用 ]功能模块</span>
+-  [☢ JSON](p13.0.0.md)
+-  [☢ YAML](p19.0.0.md)
+-  -
+-  [✴ [ 输入输出 ]input，print](p8.0.0)
+-  [✴ [ 随机数 ]random](p9.0.0)
+-  [✴ [ 生成序列 ]range](p10.0.0)
+-  
+-  -
+-  [☢ [ 文件操作 ]Path](p11_1.0.0)
+-  [☢ [ 文件读写 ]File](p11.0.0)
+-  -
+-  [☢ MySQL](p17.0.0)
+-  [☢ [ GUI ]tkinter](p16.0.0)
+-  -
+-  [☢ [ T ]多线程编程](p18.0.0)
+-  
+-  <span style='color:RED'>[ WEB ]Flask</span>
+-  [✴ Route](W1.0.0.md)
+-  [✴ Request](W2.0.0.md)
+-  [✴ Response](W3.0.0.md)
+-  
+-  <span style='color:RED'>附录</span>
+-  [✴ 环境安装](p1.0.0)
+-  -
+-  [☢ [ 关键字 ] is](Q1.0.0)
+-  [☢ [ 关键字 ] isinstance](Q2.0.0)
+-  -
+-  [✴ [ IDE ]类型注解](p14.0.0.md)
+-  
+-  
+
+
+
