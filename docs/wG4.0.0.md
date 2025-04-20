@@ -50,16 +50,20 @@ GET {{host}}/M2?key={{key}}
 
 #### **[ POST ] From**
 
-```http
-### POST (application/x-www-form-urlencoded)
-POST {{host}}/M1
-Content-Type: application/x-www-form-urlencoded
+!> 参数以`key=value`的形式出现 <span style='color:red'>[ 中间不要出现空格，参数值不应该用单引号括起来 ]</span>
 
-file1 = John &
-file2 = 30
+```http
+POST http://localhost:5001/M1
+content-type: application/x-www-form-urlencoded
+
+p1=30 &
+p2=20 &
+p3=a
 
 
 ```
+
+
 
 
 
