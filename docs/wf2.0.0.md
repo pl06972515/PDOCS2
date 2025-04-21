@@ -76,16 +76,15 @@ class Color(int, Enum):
 ///    - skip:  默认值 0
 ///    - limit: 默认值 10
 ///    - p1: in (int, None) 默认值 None ( 非 None 将限制长度 )
-///    - qs: ?qs=foo&qs=bar
+///    - p2: ?qs=foo&qs=bar
 ///
 /// </summary>
 @app.get("/M1")
-async def M1(skip: int = 0, 
-             limit: int = 10, 
-             p1: str | None = Query(None, min_length=10), 
-             qs: Union[List[str], None] = Query(default=None)):
-    vs = fake_items_db[skip : skip + limit]
-	return {"key": f"Hello World: { p1 } { p2 } { p3 }"}
+async def M1(p1: Annotated[str, Query(..., min_length=10)],
+			 p2: Annotated[List[str] | None, Query()] = None,
+			 skip: int = 0,
+			 limit: int = 10):
+	 return {"key": f"Hello World: { p1 } { skip } { limit }"}
 
 
 ```
@@ -95,7 +94,7 @@ from fastapi import FastAPI, Query
     
 // GET http://localhost:5001/M1?p1=10&p3=a
 @app.get("/M1")
-async def M1(o: QParams = Query(...)):
+async def M1(o: Annotated[QParams, Query(...)]):
 	return {
 		"p1": o.p1,
 		"p2": o.p2,
@@ -119,19 +118,23 @@ class QParams(BaseModel):
 
 #### **[ POST ]Form**
 
-!> 需预先安装`pip install python-multipart`<span style='color:red'>[ 绑定表单字段需显式声明`Form()`]</span>
+!> <span style='color:red'>[ 需预先安装`pip install python-multipart`，字段需显式声明`Form()`]</span>
 
 ```csharp
 /// <summary>
 ///  POST http://localhost:5001/M1
 ///  content-type: application/x-www-form-urlencoded
+///  
+///  p1=10&p2=a
 ///    - p1: 必选字段
-///    - p2: 默认值 10
-///    - p3: in ("a", "b", "c") 
+///    - p2: in ("a", "b", "c") 
+///    - p3: 默认值 10
 ///
 /// </summary>
 @app.post("/M1")
-async def M1(p1: int = Form(...), p2: int = Form(10), p3: Literal["a", "b", "c"] = Form(...)):
+async def M1(p1: Annotated[int, Form(...)],
+			 p2: Annotated[Literal["a", "b", "c"], Form(...)],
+			 p3: Annotated[int, Form()] = 10):
 	return {
 		"p1": p1,
 		"p2": p2,
@@ -152,7 +155,7 @@ from fastapi import FastAPI, Form
 ///
 /// </summary>
 @app.get("/M1")
-async def M1(o: QParams = Form(...)):
+async def M1(o: Annotated[QParams, Form(...)]):
 	return {
 		"p1": o.p1,
 		"p2": o.p2,
@@ -204,15 +207,17 @@ async def root(o: QParams):  // o: QParams = Body(...)
 ///  content-type: application/json
 ///   
 ///  {
-///      "os" = {
+///       "o": {
 ///          "p1": 10,
 ///          "p3": "a"
 ///       }
 ///  }
 ///
+///  embed=True: 期望请求体中的数据在一个特定的键中 [ 而不是直接作为根对象 ]
+///
 /// </summary>
 @app.post("/M1")
-async def root(os: QParams= Body(..., embed=True)):
+async def root(o: Annotated[QParams, Body(embed=True)]):
 	return {
 		"p1": o.p1,
 		"p2": o.p2,
@@ -226,20 +231,6 @@ class QParams(BaseModel):
 	p2: int = 10
 	p3: Literal["a", "b", "c"]
     model_config = {"extra": "forbid"}
-
-    // [ 提供案例 ] Swagger UI
-    model_config = {
-        "json_schema_extra": {
-            "examples": [
-                {
-                    "name": "Foo",
-                    "description": "A very nice Item",
-                    "price": 35.4,
-                    "tax": 3.2,
-                }
-            ]
-        }
-    }
 
 
 ```
