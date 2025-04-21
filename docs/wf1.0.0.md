@@ -10,3 +10,23 @@
 >
 >
 ><br/>
+
+```csharp
+from fastapi import FastAPI
+
+app = FastAPI()
+
+/*... Q: Requests ...*/
+    
+if __name__ == "__main__":
+	import uvicorn
+        
+    // Main.py -> app 对象
+	uvicorn.run("Main:app",
+				host = "0.0.0.0", port = 8000,
+				reload = True, // 生产环境: Flase
+				workers= 4)
+        
+        
+```
+

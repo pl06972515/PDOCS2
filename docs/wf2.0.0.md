@@ -4,28 +4,30 @@
 >
 >- (`FastAPI`) 通过 <span style='color:red'>[ 类型声明 → 自动解析请求中的数据 ]</span>
 >
->- <span style='color:red'>[ 请求标识：`Path( ... ), Query( ... ), Form( ... ), Body( ... ), Header( ... )`] [ 注意：其验证参数等同于`Path( ... )` ]</span>
+>- <span style='color:red'>[ 请求标识：`Path( ... ), Query( ... ), Form( ... ), Body( ... ), Header( ... )`] [ 注意：其元数据配置等同于`Path( ... )` ]</span>
 >
 >- (`bool = True`) 解析支持`1, True, true, on, yes`
 >
 >- (`jsonable_encoder`) 将复杂的`Python`对象（`如 Pydantic 模型、ORM 模型等`）<span style='color:red'>[ 转换成`JSON`可序列化的字典`Dict`]</span>
 >
->  ```csharp
->  from fastapi.encoders import jsonable_encoder
->        
->  @app.put("/M1")
->  def update_item(item: Item):
->      dict = jsonable_encoder(item)
->  
->  class Item(BaseModel):
+> ```csharp
+> from fastapi.encoders import jsonable_encoder
+>
+> class Item(BaseModel):
 >      title: str
 >      timestamp: datetime
 >      description: str | None = None
->        
->          
->  ```
 >
->  
+>---------------------------------
+>         
+> @app.put("/M1")
+> def update_item(item: Item):
+>      dict = jsonable_encoder(item)
+>
+>
+> ```
+>
+>
 >
 ><br/>
 
@@ -45,8 +47,8 @@
 ///
 /// </summary>
 @app.get("/M1/{p1}/{p2}")
-async def M1(p1: int, p2: Color):
-    v =  p2 is Colo.RED
+async def M1(p1: int, p2: Annotated[Color, Path(...)]):
+	v =  p2 is Color.RED
 	return {"key": f"Hello World: { p1 } { p2 }"}
 
 -------------------------------------
