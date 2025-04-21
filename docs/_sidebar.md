@@ -30,15 +30,18 @@
 -  [✴ [ 响应 ]Response](W3.0.0.md)
 -  -
 -  [✴ CORS](W4.0.0.md)
+-  
 -  <span style='color:RED'>[ WEB ]FastAPI</span>
 -  [✴ 简要说明](wf1.0.0.md)
 -  [✡ [ 请求 ]Request](wf2.0.0.md)
 -  [✡ [ 响应 ]Response](wf3.0.0.md)
 -  -
+-  [☢ [ IOC ]Depends](wf4.0.0.md)
+-  -
 -  [✴ [ .html ]请求文件](wG4.0.0.md)
 -  
 -  <span style='color:RED'>附录</span>
--  [☢ [ 关键字 ] with](v1.0.0.md)
+-  [☢ [ with ]IDisposable ](v1.0.0.md)
 -  
 
 
