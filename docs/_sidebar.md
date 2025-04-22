@@ -14,7 +14,9 @@
 -  [✡ [ 数据源 ] YAML](s2.0.0.md)
 -  -
 -  [✡ [ 数据源 ] MYSQL](s5.0.0.md)
--  [✡ [ ☢ 配置文件 ] init](s7.0.0.md)
+-  -
+-  [✴ [ ☢ 配置 ] configparser](s7.0.0.md)
+-  [✴ [ ☢ 配置 ] pydantic_settings](s7_1.0.0.md)
 -  
 -  <span style='color:RED'>[ 文件 ]File</span>
 -  [✡ [ 路径操作 ] os ](f1.0.0.md)
