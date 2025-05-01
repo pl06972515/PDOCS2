@@ -16,7 +16,8 @@
 -  [✡ [ 数据源 ] MYSQL](s5.0.0.md)
 -  -
 -  [✴ [ ☢ 配置 ] configparser](s7.0.0.md)
--  [✴ [ ☢ 配置 ] pydantic_settings](s7_1.0.0.md)
+-  [✴ [ ☢ 配置 ] dotenv](s7_2.0.0.md)
+-  <!--[✴ [ ☢ 配置 ] pydantic_settings](s7_1.0.0.md)-->
 -  
 -  <span style='color:RED'>[ 文件 ]File</span>
 -  [✡ [ 路径操作 ] os + Path](f1.0.0.md)
