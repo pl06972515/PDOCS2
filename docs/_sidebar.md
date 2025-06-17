@@ -29,8 +29,10 @@
 -  -
 -  [☢ file ](f6.0.0.md)
 -  
+-  
 -  <span style='color:RED'>附录</span>
--  [☢ [ with ]IDisposable ](v1.0.0.md)
+-  [✡ [ with ]IDisposable ](v1.0.0.md)
+-  [✡ [ MIME ]mimetypes](v2.0.0.md)
 -  
 
 
