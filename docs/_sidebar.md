@@ -3,8 +3,8 @@
 -  [✴ [ T ] lock](n2.0.0.md)
 -  [✴ [ T ] time](n3.0.0.md)
 -  -
--  [☢ [ T ] Single-Threaded](n5.0.0.md)
--  [☢ [ T ] asyncio](n6.0.0.md)
+-  [☢ [ 协程 ] coroutine](n5.0.0.md)
+-  [☢ [ 协程 ] asyncio](n6.0.0.md)
 -  -
 -  [✡ [ 环境 ] Environment ](s3.0.0.md)
 -  [✡ [ 随机 ] random](s4.0.0.md)
