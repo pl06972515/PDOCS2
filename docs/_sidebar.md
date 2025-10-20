@@ -13,15 +13,12 @@
 -  [☢ [ 日志 ] logging ](s10.0.0.md)
 -  
 -  <span style='color:RED'>数据源</span>
--  [✡ [ 数据源 ] JSON](s1.0.0.md)
+-  [☢ [ 数据源 ] JSON](s1.0.0.md)
 -  [✡ [ 数据源 ] YAML](s2.0.0.md)
 -  -
 -  [✡ [ 数据源 ] MYSQL](s5.0.0.md)
 -  -
--  [✴ [ ☢ 配置 ] configparser](s7.0.0.md)
--  [✴ [ ☢ 配置 ] dotenv](s7_2.0.0.md)
--  -
--  [✴ [ ☢ 模板 ] jinja2](s8.0.0.md)
+-  <!--[✴ [ ☢ 配置 ] configparser](s7.0.0.md)-->
 -  <!--[✴ [ ☢ 配置 ] pydantic_settings](s7_1.0.0.md)-->
 -  
 -  <span style='color:RED'>[ 文件 ]File</span>
@@ -33,6 +30,9 @@
 -  
 -  
 -  <span style='color:RED'>附录</span>
+-  [✴ [ 环境文件 ] dotenv](s7_2.0.0.md)
+-  [✴ [ 模板文件 ] jinja2](s8.0.0.md)
+-  -
 -  [✡ [ with ]IDisposable ](v1.0.0.md)
 -  [✡ [ MIME ]mimetypes](v2.0.0.md)
 -  
