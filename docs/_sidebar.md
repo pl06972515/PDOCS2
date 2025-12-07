@@ -8,7 +8,10 @@
 -  -
 -  [✡ [ 环境 ] Environment ](s3.0.0.md)
 -  [✡ [ 随机 ] random](s4.0.0.md)
--  [✡ [ ULID ] ](s9.0.0.md)
+-  -
+-  [✡ [ 全局唯一 ] UUID ](s9.0.0.md)
+-  [✡ [ 雪花算法 ] Snowflake ](s11.0.0.md)
+-  
 -  -
 -  [☢ [ 日志 ] logging ](s10.0.0.md)
 -  
