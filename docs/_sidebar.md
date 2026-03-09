@@ -7,7 +7,8 @@
 -  [🟥 [ 协程 ] asyncio](n6.0.0.md)
 -  -
 -  [✡ [ 环境 ] Environment ](s3.0.0.md)
--  [✡ [ 随机 ] random](s4.0.0.md)
+-  [✴ [ 环境文件 ] .env](s7_2.0.0.md)
+-  
 -  -
 -  [✡ [ 全局唯一 ] UUID ](s9.0.0.md)
 -  [✡ [ 雪花算法 ] Snowflake ](s11.0.0.md)
@@ -33,7 +34,7 @@
 -  
 -  
 -  <span style='color:RED'>附录</span>
--  [✴ [ 环境文件 ] dotenv](s7_2.0.0.md)
+-  [✡ [ 随机 ] random](s4.0.0.md)
 -  [✴ [ 模板文件 ] jinja2](s8.0.0.md)
 -  -
 -  [✡ [ with ] IDisposable ](v1.0.0.md)
