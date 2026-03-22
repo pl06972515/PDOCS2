@@ -64,7 +64,7 @@
 
 :root {
 	--base-font-size: 12px;
-	--modular-scale-1: 0.8rem;
+	--modular-scale-1: 1rem;
 	/* 主题颜色 */
 	/* --theme-color: purple;*/
 	/* 主题色调 (0-360) */
